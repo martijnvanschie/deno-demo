@@ -1,0 +1,23 @@
+<!doctype html>
+<script>
+
+
+async function test(){
+
+	const response = await fetch('http://localhost:7700/accounts');
+	const myJson = await response.json(); //extract JSON from the http response
+	return myJson;
+}
+
+test()
+	.then(
+		data => {
+		console.log(data);
+		document.getElementById("response").innerText = JSON.stringify(data, null, '    ');
+		});
+
+</script>
+
+<button onclick="test()">test</button>
+
+<pre id="response"></pre>
