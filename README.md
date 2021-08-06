@@ -52,3 +52,11 @@ error: TS2339 [ERROR]: Property 'openPlugin' does not exist on type 'typeof Deno
 Run the following command to clear the cache
 
 `deno cache .\app.ts --unstable`
+
+## MongoDB
+
+### Start
+
+Run the following command to start the MongoDB Service using the specified data folder.
+
+`.\mongod.exe --dbpath C:\Apps\Data\MongoDB`
